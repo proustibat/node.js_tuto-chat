@@ -1,0 +1,410 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|ABeeZee|Convergence|Oxygen:400,700|Open+Sans:400,700|Karla:400,700|Raleway:400,700&subset=latin,latin-ext);
+/* 
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Convergence', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/**
+ * 	COULEURS
+ *	Rouge : d93654
+ * 	Rose : f24b78
+ * 	Rose clair: f8a5bb
+ * 	Noir : 1f2326
+ * 	Vert foncé : 5ebfb5
+ * 	Vert clair : 9cd9d3
+ * 
+ */
+body {
+	font-family: 'Karla', sans-serif;
+	color: #1f2326;
+	font-size: 12px;
+	background-color: #9cd9d3;
+}
+strong {
+	font-weight: bold;
+	font-size: 14px;
+}
+.date {
+	font-style: italic;
+	font-size: 10px;
+}
+
+
+
+header {
+	background-color: #d93654;
+	height: 100px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 100px;
+}
+
+
+
+
+
+
+#loginform {
+	background-color: #f24b78;
+	text-align: right;
+	padding-right: 15px;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+}
+#loginform input {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	height: 30px;
+	font-size: 12px;
+	border: 0 none;
+	color: #d93654;
+}
+
+::-webkit-input-placeholder {
+	color: #f8a5bb;
+}
+:-moz-placeholder {
+	color: #f8a5bb;
+}
+:-ms-input-placeholder {
+	color: #f8a5bb;
+}
+
+#loginform input.btn {
+	background-color: white;
+	color: #d93654;
+}
+#loginform input.btn:hover {
+	background-color: #d93654;
+	color: white;
+}
+
+
+#welcome {
+	background-color: #f24b78;
+	text-align: right;
+	padding-right: 15px;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	height: 46px;
+	font-size: 28px;
+}
+#welcome p {
+	font-size: 28px;
+	margin-right: 10px;
+}
+
+
+
+#sidebar  {
+	position: absolute;
+	top:0; 
+	left:0;
+	width: 200px;
+	height: 100%;
+	background: #5ebfb5;
+	z-index: -1;
+	position: fixed;
+	border-right: 10px solid #f24b78;
+}
+#sidebar #users {
+	color: white;
+	margin-top: 148px;
+}
+#sidebar #users h1{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 5px;
+	margin-top:5px;
+}
+
+
+
+#content {
+	margin-left: 200px;
+}
+
+
+#content #form {
+	position: fixed;
+	width: 100%;
+	top: 146px;
+	left: 210px;
+	background-color: #9cd9d3;
+	height:53px;
+	border-bottom: 10px solid #f24b78;
+}
+#content #form input {
+	display: block;
+	border: 0 none;
+	height: 30px;
+	margin-top: 10px;
+	border: 0 none;
+	outline: none;
+}
+
+#content #form input:focus {
+	border: 1px solid #1f2326;
+}
+#content #form #message {
+	position: fixed;
+	right: 210px;
+	left: 220px;
+}
+#content #form #send {
+	width: 200px;
+	position: fixed;
+	right: 10px;
+	padding-right: 10px;
+	margin-top: 11px;
+}
+
+
+
+
+#content #messages {
+	position: relative;
+	top:210px;
+	/*left: 10px;*/
+	z-index: -2;
+	background: #5ebfb5;
+	padding-top: 10px;
+}
+
+
+ 
+#content #messages .message {
+	display: block;
+	margin-bottom: 10px;
+	background: #9cd9d3;
+}
+
+#content #messages .message img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+#content #messages .message .info{
+	display: block;
+	position: relative;
+	top: 0px; 
+	/*left: 50px;*/
+	right: 0px;
+	margin-left: 80px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
