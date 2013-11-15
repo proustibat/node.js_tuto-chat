@@ -1,6 +1,6 @@
 (function($) {
 	
-	var socket = io.connect('http://192.168.1.63:2901');
+	var socket = io.connect('http://192.168.4.64:2901');
 	var msgtpl = $("#msgtpl").html(); //stocke le code html d'une div de message
 	$("#msgtpl").remove(); //supprime la div
 
